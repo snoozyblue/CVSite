@@ -1,0 +1,234 @@
+/* 
+Title:        style.css
+Author:       Ceryl Lake
+Date Started: 23/09/2026
+Purpose:      Stylesheet for my website that demonstrates projects, CV etc.
+
+Baseline CSS template by W3Schools (https://www.w3schools.com/css)
+Scanline effect by ynef (https://codepen.io/ynef/pen/yvvyGv)
+augmented-ui by propjockey (https://augmented-ui.com/)
+Glitch effects by Matthew Peck-Deloughry (https://deloughry.co.uk/field-notes/building-glitch-effects-with-css/#the-foundation-css-custom-properties)
+*/
+
+body {
+  background-color: #202324;
+}
+
+:root {
+    /* Glitch Colors - for chromatic aberration */
+    --glitch-red: #ff4757;
+    --glitch-cyan: #00d9ff;
+
+    /* Extended palette for variety */
+    --color-pink: #ff6b9d;
+    --color-success: #00ff87;
+    --color-warning: #fffa65;
+}
+
+/* Custom font for headers. */
+@font-face {
+  font-family: "Instruction"; /* set name */
+  src: 
+    local("Instruction"), 
+    url("Fonts/Instruction.otf"); /* url of the font */
+}
+
+@font-face {
+  font-family: "Instruction"; /* set name */
+  src: 
+    local("Instruction Bold"), 
+    url("Fonts/Instruction Bold.otf"); /* url of the font */
+  font-style: bold;
+}
+
+h1,h2,h3 {
+  font-family: "Instruction", sans-serif; /* use font */
+  font-style: bold;
+  -webkit-text-stroke: 1px black;
+  color: white;
+} 
+
+html,body,h4,h5,h6 {
+  font-family:"Roboto",sans-serif;
+  color: whitesmoke;
+}
+
+/* Grids for layout purposes. */
+.snoozygrid1 {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.snoozygrid2{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+/* Skims down columns when viewed on smaller screens, like mobiles. */
+@media (min-width:601px) {
+  .snoozygrid1 {
+    grid-template-columns:1fr 2fr;
+  }
+
+  .snoozygrid2{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* This is a block I wrote to get to grips with augmented-ui. */
+div.snoozy {
+  display: inline-block;
+  box-shadow: 10px 10px 5px lightblue;
+  --aug-border: initial;
+  --aug-border-all: 2px;
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  /* padding: 10px;  */
+  --aug-border-bg: cyan;
+  --aug-inlay-bg: rgba(0, 255, 255, 0.083);
+}
+
+/* This panel is for the Experience and Education secions of the CV.*/
+div.snoozy-panel {
+  display: inline-block;
+  width: 100%;
+  box-shadow: 10px 10px 5px lightblue;
+  --aug-border: initial;
+  --aug-border-all: 2px;
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  /* padding: 10px;  */
+  
+  --aug-border-bg: cyan;
+  --aug-inlay-bg: rgba(0, 255, 255, 0.083);
+  --aug-tl-extend2: 20%;
+  --aug-tr-extend1: 20%;
+}
+
+/* Glow effect under the navbar. */
+div.navbar-glow{
+  font-family: "Instruction";
+  -webkit-box-shadow:0px 0px 15px 0px rgba(8,193,196,0.9);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
+  box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
+}
+
+/* For the fade under the name over the profile picture. */
+div.upwards-name-gradient {
+  width: 100%;
+  text-align: center;
+  background: #1D3731;
+  background: linear-gradient(0deg, rgba(29, 55, 49, 1) 0%, rgba(29, 48, 49, 1) 10%, rgba(50, 99, 99, 0.51) 55%, rgba(50, 99, 99, 0) 100%);
+}
+
+/* ---------------------------------------------------------------- SCANLINES workings below. */
+.scanlines {
+    overflow: hidden;
+    position: relative;
+}
+.scanlines:before,
+.scanlines:after {
+    display: block;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+}
+.scanlines:before {
+    width: 100%;
+    height: 2px;
+    z-index: 2147483649;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.75;
+    animation: scanline 6s linear infinite;
+}
+.scanlines:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483648;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 51%
+    );
+    background-size: 100% 4px;
+    animation: scanlines 1s steps(60) infinite;
+}
+
+/* ANIMATE UNIQUE SCANLINE */
+@keyframes scanline {
+    0% {
+        transform: translate3d(0, 200000%, 0);
+    }
+}
+
+@keyframes scanlines {
+    0% {
+        background-position: 0 50%;
+    }
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+div.scanlines {
+    position: absolute;
+}
+
+div .jpg {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.jpg {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/800px-Philips_PM5544.svg.png")
+        no-repeat;
+    background-size: cover;
+}
+
+body {
+    position: relative;
+    background: #1b1b1b;
+}
+/* ---------------------------------------------------------------- SCANLINES end. */
+
+.glitch-text {
+    animation: text-glitch 6s ease-in-out infinite;
+}
+
+@keyframes text-glitch {
+    0%,
+    92%,
+    100% {
+        transform: translateX(0);
+        text-shadow: none;
+    }
+    93% {
+        transform: translateX(-2px);
+        text-shadow:
+            4px 0 var(--glitch-cyan),
+            -4px 0 var(--glitch-red);
+    }
+    94% {
+        transform: translateX(2px);
+        text-shadow:
+            -4px 0 var(--glitch-cyan),
+            4px 0 var(--glitch-red);
+    }
+    95% {
+        transform: translateX(-1px);
+        text-shadow:
+            2px 0 var(--glitch-cyan),
+            -2px 0 var(--glitch-red);
+    }
+    96% {
+        transform: translateX(1px);
+        text-shadow: none;
+    }
+}
