@@ -26,6 +26,17 @@
         <link rel="stylesheet" href="style.css"> <!-- Local: My stylesheet for custom elements -->
     </head>
 
+    <header>
+        <!-- Nav bar/menu -->
+        <div class="navbar-glow w3-top w3-bar w3-black">
+            <a href="/index.php"        class="w3-bar-item w3-button" target='_parent'>Home</a>
+            <a href="/CV.php"           class="w3-bar-item w3-button" target='_parent'>CV</a>
+            <a href="/projects.php"     class="w3-bar-item w3-button" target='_parent'>Projects</a>
+            <a href="/graphicdesign.php"class="w3-bar-item w3-button" target='_parent'>Graphic Design</a>
+            <a href="/contact.php"      class="w3-bar-item w3-button" target='_parent'>Contact</a>
+        </div>
+    </header>
+
     <body>
         
     <!-- Page Container -->
