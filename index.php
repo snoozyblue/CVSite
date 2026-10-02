@@ -22,21 +22,20 @@
     <link rel="stylesheet" href="style.css"> <!-- Local: My stylesheet for custom elements -->
 
 <!-- DOESN'T WORK FIX ME AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
- `  <header>
-        <!-- Include the navbar from the JS file -->
-        <script src="navbar.js";></script>      
-    </header>
+<!--     <header>  
+        <object type="text/html" data="nav.html" width="100%" class="w3-top"></object>
+    </header> -->
 <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
 
     <body>
     
         <!-- Nav bar/menu -->
         <div class="navbar-glow w3-top w3-bar w3-black">
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
-            <a href="#CV" class="w3-bar-item w3-button">CV</a>
-            <a href="#Projects" class="w3-bar-item w3-button">Projects</a>
-            <a href=""class="w3-bar-item w3-button">Graphic Design</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="/index.php"        class="w3-bar-item w3-button" target='_parent'>Home</a>
+            <a href="/CV.php"           class="w3-bar-item w3-button" target='_parent'>CV</a>
+            <a href="/projects.php"     class="w3-bar-item w3-button" target='_parent'>Projects</a>
+            <a href="/graphicdesign.php"class="w3-bar-item w3-button" target='_parent'>Graphic Design</a>
+            <a href="/contact.php"      class="w3-bar-item w3-button" target='_parent'>Contact</a>
         </div>
 
         <!-- Page Container -->
@@ -47,9 +46,7 @@
 
                 <!-- Left Column -->
                 <div>
-
-
-                    <div class="snoozy" data-augmented-ui="tl-clip tr-clip br-clip bl-clip both">
+                    <div class="snoozy-panel w3-display-container" data-augmented-ui="tl-clip tr-clip br-clip bl-clip both">
                         <div class="w3-display-container">
 
                             <!-- Profile image -->
@@ -141,7 +138,7 @@
 
                     <!-- Work Experience -->
                     <section>
-                        <div data-augmented-ui=" tl-2-clip-x tr-2-clip-x br-clip bl-clip both" class="snoozy-panel"> <!-- Open a new instance of the Snoozy augmented-ui CSS with a funky border on -->
+                        <div data-augmented-ui=" tl-2-clip-x tr-2-clip-x br-clip bl-clip both" class="snoozy-panel-extend"> <!-- Open a new instance of the Snoozy augmented-ui CSS with a funky border on -->
                         
                             <!-- Scanline effect -->
                             <div class="scanlines">
@@ -217,7 +214,7 @@
 
                     <!-- Education -->
                     <section>
-                        <div data-augmented-ui=" tl-2-clip-x tr-2-clip-x br-clip bl-clip both" class="snoozy-panel"> 
+                        <div data-augmented-ui=" tl-2-clip-x tr-2-clip-x br-clip bl-clip both" class="snoozy-panel-extend"> 
 
                             <!-- Scanline effect -->
                             <div class="scanlines">
@@ -272,7 +269,7 @@
 
                         <!-- Left snoozygrid2 -->
                         <div>
-                            <div data-augmented-ui="tl-round tr-round r-clip-y br-round bl-round l-clip-y both" class="snoozy-panel">
+                            <div data-augmented-ui="tl-round tr-round r-clip-y br-round bl-round l-clip-y both" class="snoozy-panel-extend">
                                 <div class="w3-display-container">
                                     <img src="Images/transcode.gif"
                                     style="width:100%; height:stretch;"
@@ -283,7 +280,7 @@
 
                         <!-- Right snoozygrid2 -->
                         <div>
-                            <div class="snoozy" data-augmented-ui="tl-clip tr-clip br-clip bl-clip both" style="width:100%;">
+                            <div class="snoozy-panel" data-augmented-ui="tl-clip tr-clip br-clip bl-clip both" style="width:100%;">
                                 <div class="w3-display-container">
                                     <!-- Interests Section -->
                                     <p class="w3-large w3-center">

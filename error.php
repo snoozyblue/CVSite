@@ -1,13 +1,8 @@
 <!-- Title        : contact.php -->
 <!-- Author       : Ceryl Lake-->
 <!-- Date Created : 25/09/2025 -->
-<!-- Purpose      : Contact page for potential commisioners/employers. -->
+<!-- Purpose      : Catch-all error page. -->
  
-
-<!-- Email, phone, contact form -->
-
-
-
 <!DOCTYPE html>
 <html>
     <head>

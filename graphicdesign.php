@@ -7,22 +7,29 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Ceryl Lake - Graphic Design Portfolio</title>
+        <title>Ceryl Lake|Graphic Design Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <!-- Preconnects -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Both of these help with getting the Roboto font. -->
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- External: W3 basic layout template -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!-- External: Body Text and smaller headings -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- External: Icons for headers and bullets -->
+        <link rel="stylesheet" href="node_modules/augmented-ui/augmented-ui.min.css"> <!-- Local: CSS library for custom container panels -->
+        <link rel="stylesheet" href="style.css"> <!-- Local: My stylesheet for custom elements -->
     </head>
 
-    <header>
-        <!-- Include the navbar from the JS file -->
-        <script src="navbar.js" async></script>   
-    </header>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
-        <script src="" async defer></script>
+    <!-- Page Container -->
+        <main class="w3-content" style="max-width:1400px; margin-top:7vh;">
+            <div class="glitch-text snoozy-panel w3-display-container" style="width:100%" data-augmented-ui="tl-clip tr-clip br-clip bl-clip both">
+                <h1 style="text-align: center;">content here</h1>
+            </div>
+        </main>        
     </body>
 </html>

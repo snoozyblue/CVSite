@@ -61,9 +61,9 @@ html,body,h4,h5,h6 {
 }
 
 .snoozygrid2{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:16px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
 }
 
 /* Skims down columns when viewed on smaller screens, like mobiles. */
@@ -78,49 +78,49 @@ html,body,h4,h5,h6 {
 }
 
 /* This is a block I wrote to get to grips with augmented-ui. */
-div.snoozy {
-  display: inline-block;
-  box-shadow: 10px 10px 5px lightblue;
-  --aug-border: initial;
-  --aug-border-all: 2px;
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  /* padding: 10px;  */
-  --aug-border-bg: cyan;
-  --aug-inlay-bg: rgba(0, 255, 255, 0.083);
+div.snoozy-panel {
+    display: inline-block;
+    box-shadow: 10px 10px 5px lightblue;
+    --aug-border: initial;
+    --aug-border-all: 2px;
+    --aug-inlay: initial;
+    --aug-inlay-all: 0px;
+    /* padding: 10px;  */
+    --aug-border-bg: cyan;
+    --aug-inlay-bg: rgba(0, 255, 255, 0.083);
 }
 
 /* This panel is for the Experience and Education secions of the CV.*/
-div.snoozy-panel {
-  display: inline-block;
-  width: 100%;
-  box-shadow: 10px 10px 5px lightblue;
-  --aug-border: initial;
-  --aug-border-all: 2px;
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  /* padding: 10px;  */
-  
-  --aug-border-bg: cyan;
-  --aug-inlay-bg: rgba(0, 255, 255, 0.083);
-  --aug-tl-extend2: 20%;
-  --aug-tr-extend1: 20%;
+div.snoozy-panel-extend {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 10px 10px 5px lightblue;
+    --aug-border: initial;
+    --aug-border-all: 2px;
+    --aug-inlay: initial;
+    --aug-inlay-all: 0px;
+    /* padding: 10px;  */
+    
+    --aug-border-bg: cyan;
+    --aug-inlay-bg: rgba(0, 255, 255, 0.083);
+    --aug-tl-extend2: 20%;
+    --aug-tr-extend1: 20%;
 }
 
 /* Glow effect under the navbar. */
 div.navbar-glow{
-  font-family: "Instruction";
-  -webkit-box-shadow:0px 0px 15px 0px rgba(8,193,196,0.9);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
-  box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
+    font-family: "Instruction";
+    -webkit-box-shadow:0px 0px 15px 0px rgba(8,193,196,0.9);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
+    box-shadow: 0px 0px 15px 0px rgba(8,193,196,0.9);
 }
 
 /* For the fade under the name over the profile picture. */
 div.upwards-name-gradient {
-  width: 100%;
-  text-align: center;
-  background: #1D3731;
-  background: linear-gradient(0deg, rgba(29, 55, 49, 1) 0%, rgba(29, 48, 49, 1) 10%, rgba(50, 99, 99, 0.51) 55%, rgba(50, 99, 99, 0) 100%);
+    width: 100%;
+    text-align: center;
+    background: #1D3731;
+    background: linear-gradient(0deg, rgba(29, 55, 49, 1) 0%, rgba(29, 48, 49, 1) 10%, rgba(50, 99, 99, 0.51) 55%, rgba(50, 99, 99, 0) 100%);
 }
 
 /* ---------------------------------------------------------------- SCANLINES workings below. */
